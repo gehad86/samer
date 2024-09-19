@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة المقاولات العامة</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- إضافة مكتبة Font Awesome للأيقونات -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <header>
+      <div class="container">
+        <h1>شركة المقاولات العامة</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#projects">مشاريعنا</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- قسم من نحن -->
+    <section id="about">
+      <div class="container">
+        <h2>من نحن</h2>
+        <p>
+          نحن شركة رائدة في مجال المقاولات العامة نقدم خدمات بناء عالية الجودة
+          لجميع أنواع المشاريع.
+        </p>
+        <!-- <img
+          src="images/aboutus.jpg"
+          style="width: 100%; object-fit: cover"
+          alt="عن الشركة"
+        /> -->
+      </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="gray-bg">
+      <div class="container">
+        <h2>خدماتنا</h2>
+        <div class="service">
+          <i class="fas fa-home"></i>
+          <h3>البناء السكني</h3>
+          <img src="images/1.jpg" alt="البناء السكني" />
+          <p>نقدم خدمات بناء المنازل السكنية بأعلى جودة وبأحدث التقنيات.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-building"></i>
+          <h3>البناء التجاري</h3>
+          <img src="images/2.jpg" alt="البناء التجاري" />
+          <p>نتخصص في إنشاء المباني التجارية والورش الصناعية.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-road"></i>
+          <h3>البنية التحتية</h3>
+          <img src="images/3.jpg" alt="البنية التحتية" />
+          <p>نوفر خدمات تطوير البنية التحتية كالطرق والجسور .......</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects">
+      <div class="container">
+        <h2>مشاريعنا</h2>
+        <p>هنا بعض من أبرز مشاريعنا الناجحة.</p>
+        <div class="project-gallery">
+          <img src="images/4.jpg" alt="مشروع 1" />
+          <img src="images/5.jpg" alt="مشروع 2" />
+          <img src="images/6.jpg" alt="مشروع 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="gray-bg">
+      <div class="container">
+        <h2>تواصل معنا</h2>
+        <p>للمزيد من المعلومات، يرجى الاتصال بنا.</p>
+        <p>المدير التنفيذي : سامر سنجقدار</p>
+        <p>جوال : 0556930603</p>
+        <img src="images/qrcode.png" alt="QR Code للشركة" />
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 شركة المقاولات العامة. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <!-- إضافة تأثير التمرير البطيء -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
